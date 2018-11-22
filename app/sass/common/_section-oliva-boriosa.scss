@@ -101,3 +101,10 @@
     flex-basis: 100%;
   }
 }
+
+@media screen and (max-width: 467px) {
+  .block-text--p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

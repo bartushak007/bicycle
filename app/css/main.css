@@ -129,6 +129,13 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1150px) {
+  .section-vintage {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
 .block-text {
   font-family: "Lato", sans-serif;
 }
@@ -269,6 +276,13 @@
   }
   .section-oliva__text {
     flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .block-text--p {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
@@ -585,6 +599,18 @@
 
 .section-form__button:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 570px) {
+  .section-form__input {
+    margin-left: 10%;
+    width: 80%;
+  }
+  .section-form__button {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 10%;
+  }
 }
 
 .bottom-block {
