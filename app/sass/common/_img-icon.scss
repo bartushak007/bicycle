@@ -34,3 +34,9 @@
     }
   }
 }
+
+@media screen and (max-width: 560px) {
+  .img-icon--bicycle-company:after {
+    display: none;
+  }
+}

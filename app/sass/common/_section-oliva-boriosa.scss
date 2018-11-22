@@ -92,3 +92,12 @@
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .section-oliva__img {
+    display: none;
+  }
+  .section-oliva__text {
+    flex-basis: 100%;
+  }
+}

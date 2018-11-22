@@ -1,8 +1,12 @@
-.header{	
-	background: url(../images/header.jpg) center top/cover;
-	background-repeat: no-repeat;
-	
-	&--space{
-		padding: 35px 0 680px 0;
-	}
+.header {
+  background: url(../images/header.jpg) center top/cover;
+  background-repeat: no-repeat;
+
+  &__hamburger {
+  }
+
+  &--space {
+    padding: 35px 0 680px 0;
+  }
 }
+

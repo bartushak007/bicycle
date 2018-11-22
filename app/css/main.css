@@ -33,14 +33,23 @@
   margin: 0 35px;
 }
 
-.list__a {
+.list-a {
   text-decoration: none;
   font-size: 13px;
   color: #4d4959;
   text-transform: uppercase;
-  font-family: 'lato';
+  font-family: "lato";
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .list__li--mrgn {
+    display: none;
+  }
+  .list-a {
+    padding-right: 15px;
+  }
 }
 
 .header {
@@ -254,6 +263,15 @@
   max-width: 404px;
 }
 
+@media screen and (max-width: 800px) {
+  .section-oliva__img {
+    display: none;
+  }
+  .section-oliva__text {
+    flex-basis: 100%;
+  }
+}
+
 .img-icon {
   position: relative;
 }
@@ -283,6 +301,12 @@
   background: url(../images/bicycles.png);
   width: 208px;
   height: 67px;
+}
+
+@media screen and (max-width: 560px) {
+  .img-icon--bicycle-company:after {
+    display: none;
+  }
 }
 
 .section-carousel {
@@ -563,18 +587,6 @@
   opacity: 0.7;
 }
 
-@media screen and (max-width: 560px) {
-  .section-form__button {
-    width: 80%;
-    margin-top: 36px;
-    margin-left: 10%;
-  }
-  .section-form__input {
-    width: 80%;
-    margin-left: 10%;
-  }
-}
-
 .bottom-block {
   width: 100%;
   padding: 96px 0 105px;
@@ -626,7 +638,6 @@
 .bottom-block__img--position {
   position: relative;
   top: 5px;
-  left: 9px;
 }
 
 .bottom-block__social {
