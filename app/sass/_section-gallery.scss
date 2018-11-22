@@ -1,0 +1,79 @@
+.section-gallery {
+  display: flex;
+  justify-content: center;
+
+  &__elem {
+    position: relative;
+
+    &::after {
+      content: "";
+      text-transform: uppercase;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover {
+      &::after {
+        background-color: #58a589;
+        opacity: 0.7;
+      }
+    }
+    &:hover > .section-gallery__a {
+      visibility: visible;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.8;
+    z-index: 1;
+    visibility: hidden;
+
+    &:before {
+      content: "";
+      background-image: url(../images/bicycle-logo-galery.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      width: 51px;
+      height: 30px;
+      margin: 0 auto 14px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section-gallery {
+    flex-direction: column;
+    max-width: 535px;
+    margin: auto;
+  }
+}
+
+

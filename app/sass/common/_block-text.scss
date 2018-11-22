@@ -1,0 +1,38 @@
+.block-text {
+  font-family: "Lato", sans-serif;
+  &--justify {
+    text-align: justify;
+  }
+  &--h {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #848789;
+  }
+
+  &--p {
+    font-weight: regular;
+    color: #848789;
+    &-big {
+      font-size: 18px;
+      margin-top: 36px;
+      line-height: 2;
+    }
+    &-small {
+      font-size: 16px;
+      margin-top: 30px;
+      line-height: 1.5;
+
+      &:after {
+        content: "";
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 42px;
+        border-bottom: 1px solid #d7d7d7;
+      }
+    }
+  }
+}

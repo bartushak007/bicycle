@@ -1,0 +1,9 @@
+.logo {
+	&:before{
+		content: '';
+		display: block;
+		background: url(../images/logo.png);
+		width: 94px;
+		height: 85px;
+	}	
+}

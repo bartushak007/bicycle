@@ -1,0 +1,36 @@
+.img-icon {
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &--bicycle-company {
+    &:after {
+      background: url(../images/bicycle-logo.png);
+      width: 113px;
+      height: 118px;
+    }
+  }
+
+  &--vintage {
+    &:after {
+      background: url(../images/vintage.png);
+      width: 177px;
+      height: 152px;
+    }
+  }
+
+  &--bicycles {
+    &:after {
+      background: url(../images/bicycles.png);
+      width: 208px;
+      height: 67px;
+    }
+  }
+}

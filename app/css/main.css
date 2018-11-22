@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.logo:before {
+  content: '';
+  display: block;
+  background: url(../images/logo.png);
+  width: 94px;
+  height: 85px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__li {
+  list-style-type: none;
+  font-size: 13px;
+  color: #4d4959;
+}
+
+.list__li--mrgn {
+  margin: 0 35px;
+}
+
+.list__a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #4d4959;
+  text-transform: uppercase;
+  font-family: 'lato';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header {
+  background: url(../images/header.jpg) center top/cover;
+  background-repeat: no-repeat;
+}
+
+.header--space {
+  padding: 35px 0 680px 0;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+}
+
+.icon--chain:before {
+  background: url(../images/chain.png);
+  width: 50px;
+  height: 43px;
+  position: absolute;
+}
+
+.icon--body:before {
+  background: url(../images/body-icon.png);
+  width: 41px;
+  height: 30px;
+  position: absolute;
+}
+
+.icon--la-boriosa:before {
+  background: url(../images/la-boriosa.png);
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.icon--retro:before {
+  background: url(../images/retro.png);
+  width: 23px;
+  height: 41px;
+  position: absolute;
+}
+
+.icon--twit:before {
+  background: url(../images/twit.png);
+  width: 32px;
+  height: 27px;
+  position: absolute;
+}
+
+.icon--logo:before {
+  background: url(../images/logo.png);
+  bottom: 30px;
+  width: 94px;
+  height: 85px;
+  transform: translate(-50%, -30%);
+}
+
+.section-vintage {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 117px 0 143px;
+}
+
+.section-vintage__text {
+  margin: 0 auto;
+  max-width: 1082px;
+  text-align: center;
+}
+
+.block-text {
+  font-family: "Lato", sans-serif;
+}
+
+.block-text--justify {
+  text-align: justify;
+}
+
+.block-text--h {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #848789;
+}
+
+.block-text--p {
+  font-weight: regular;
+  color: #848789;
+}
+
+.block-text--p-big {
+  font-size: 18px;
+  margin-top: 36px;
+  line-height: 2;
+}
+
+.block-text--p-small {
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.block-text--p-small:after {
+  content: "";
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 42px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.section-oliva {
+  display: flex;
+  height: 600px;
+}
+
+.section-oliva--reverse {
+  flex-direction: row-reverse;
+}
+
+.section-oliva__img--bicycle {
+  flex-grow: 1;
+  background: url(../images/bike.jpg) center top/cover;
+}
+
+.section-oliva__img--old-bicycle {
+  flex-grow: 1;
+  background: url(../images/old-bicycle.jpg) center top/cover;
+}
+
+.section-oliva__img--bicycle-body {
+  flex-grow: 1;
+  background: url(../images/bicycle-body.jpg) center top/cover;
+}
+
+.section-oliva__img--bicycle-all {
+  flex-grow: 1;
+  background: url(../images/bicycle-all.jpg) center top/cover;
+}
+
+.section-oliva__img--width {
+  width: 100%;
+}
+
+.section-oliva__text {
+  flex-basis: 507px;
+  padding: 128px 0 0 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.section-oliva__text--saddle {
+  background: url(../images/saddle.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
+}
+
+.section-oliva__text--second-saddle {
+  background: url(../images/second-saddle.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: contain;
+}
+
+.section-oliva__text-wrapper {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  bottom: 30%;
+  left: 0;
+  background: #ffffff;
+  transition: 1.5s;
+}
+
+.section-oliva__text-wrapper:hover {
+  bottom: 10%;
+}
+
+.section-oliva__text-wrapper::after {
+  content: "";
+  background: inherit;
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.section-oliva__text-wrapper:hover::after {
+  transition: 1s;
+  background: transparent;
+  box-shadow: -3px -3px 5px -2px rgba(46, 50, 43, 0.71);
+}
+
+.section-oliva__text-container {
+  margin: 0 auto;
+  max-width: 404px;
+}
+
+.img-icon {
+  position: relative;
+}
+
+.img-icon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.img-icon--bicycle-company:after {
+  background: url(../images/bicycle-logo.png);
+  width: 113px;
+  height: 118px;
+}
+
+.img-icon--vintage:after {
+  background: url(../images/vintage.png);
+  width: 177px;
+  height: 152px;
+}
+
+.img-icon--bicycles:after {
+  background: url(../images/bicycles.png);
+  width: 208px;
+  height: 67px;
+}
+
+.section-carousel {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 184px 0 68px;
+}
+
+.section-carousel__text {
+  max-width: 1082px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  display: none;
+  margin: 0 auto;
+}
+
+.section-carousel__h {
+  font-weight: bold;
+  color: #353738;
+  font-size: 18px;
+  margin-top: 36px;
+  letter-spacing: 3px;
+}
+
+.section-carousel__span {
+  color: #848789;
+  font-weight: lighter;
+}
+
+.section-carousel__p {
+  font-style: italic;
+  color: #848789;
+  font-size: 24px;
+  margin-top: 36px;
+  line-height: 1.5;
+}
+
+.section-carousel__radio {
+  position: absolute;
+  visibility: hidden;
+  bottom: 9999px;
+}
+
+.section-carousel__radio-one:checked ~ .section-carousel__text-one {
+  display: block;
+}
+
+.section-carousel__radio-one:checked ~ .section-carousel__inputs
+.section-carousel__input-elem-one:after {
+  background: #a9afb3;
+}
+
+.section-carousel__radio-two:checked ~ .section-carousel__text-two {
+  display: block;
+}
+
+.section-carousel__radio-two:checked ~ .section-carousel__inputs
+.section-carousel__input-elem-two:after {
+  background: #a9afb3;
+}
+
+.section-carousel__radio-three:checked ~ .section-carousel__text-three {
+  display: block;
+}
+
+.section-carousel__radio-three:checked ~ .section-carousel__inputs
+.section-carousel__input-elem-three:after {
+  background: #a9afb3;
+}
+
+.section-carousel__inputs {
+  text-align: center;
+  margin-top: 125px;
+}
+
+.section-carousel__input-elem:after {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #a9afb3;
+  border-radius: 10px;
+}
+
+.section-carousel__input-elem--space {
+  margin: 0 9px;
+}
+
+.section-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.section-gallery__elem {
+  position: relative;
+}
+
+.section-gallery__elem::after {
+  content: "";
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section-gallery__elem:hover::after {
+  background-color: #58a589;
+  opacity: 0.7;
+}
+
+.section-gallery__elem:hover > .section-gallery__a {
+  visibility: visible;
+}
+
+.section-gallery__img {
+  width: 100%;
+  display: block;
+}
+
+.section-gallery__a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.8;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.section-gallery__a:before {
+  content: "";
+  background-image: url(../images/bicycle-logo-galery.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 51px;
+  height: 30px;
+  margin: 0 auto 14px;
+}
+
+.section-gallery__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-gallery__row {
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .section-gallery {
+    flex-direction: column;
+    max-width: 535px;
+    margin: auto;
+  }
+}
+
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #282f35;
+  padding: 75px 0;
+}
+
+.section-links__a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #64c29e;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  padding: 10px 115px;
+  border: 1px solid #64c29e;
+}
+
+.section-links__a:hover {
+  background: #64c29e;
+  color: #282f35;
+}
+
+.section-links__a--grey {
+  margin: 0 20px;
+  border: 1px solid #94979a;
+  color: #ffffff;
+}
+
+.section-links__a--grey:hover {
+  background: #94979a;
+}
+
+@media screen and (max-width: 1040px) {
+  .section-links {
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+  }
+  .section-links__box {
+    margin: 21px 10%;
+    position: relative;
+    height: 79px;
+    text-align: center;
+  }
+  .section-links__a {
+    font-size: 24px;
+    padding: 24px;
+    border: 2px solid #64c29e;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .section-links__a:hover {
+    background: #64c29e;
+    color: #282f35;
+  }
+  .section-links__a--grey {
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #94979a;
+    color: #ffffff;
+  }
+  .section-links__a--grey:hover {
+    background: #94979a;
+  }
+}
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  align-items: center;
+  background: #ffffff;
+  padding: 227px 0 111px;
+}
+
+.section-form__text {
+  font-size: 24px;
+  color: #848789;
+}
+
+.section-form__my-form {
+  margin-top: 40px;
+}
+
+.section-form__input {
+  padding: 27px;
+  font-size: 20px;
+  width: 400px;
+}
+
+.section-form__input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.section-form__button {
+  padding: 27px 47px;
+  font-size: 24px;
+  background: #64c29e;
+  color: #ffffff;
+  border: 1px solid #64c29e;
+  margin-left: 8px;
+}
+
+.section-form__button:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 560px) {
+  .section-form__button {
+    width: 80%;
+    margin-top: 36px;
+    margin-left: 10%;
+  }
+  .section-form__input {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+.bottom-block {
+  width: 100%;
+  padding: 96px 0 105px;
+  font-family: "Lato", sans-seri;
+  color: #848789;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-block__container {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-block__office {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-block__span {
+  display: flex;
+}
+
+.bottom-block__span-one {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bottom-block__span-two {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.bottom-block__span-three {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.bottom-block__img {
+  transition: 1s;
+}
+
+.bottom-block__img:hover {
+  opacity: 0.6;
+}
+
+.bottom-block__img--position {
+  position: relative;
+  top: 5px;
+  left: 9px;
+}
+
+.bottom-block__social {
+  display: flex;
+  width: 135px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-block__author {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-block__author__author-text {
+  font-size: 14px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 630px) {
+  .bottom-block {
+    padding: 50px 0 50px;
+  }
+  .bottom-block__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-block__office {
+    text-align: center;
+  }
+  .bottom-block__social {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
