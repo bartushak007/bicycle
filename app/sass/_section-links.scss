@@ -36,23 +36,14 @@
     margin: auto;
     position: relative;
 
-    &__box {
-      margin: 21px 10%;
-      position: relative;
-
-      height: 79px;
-      text-align: center;
-    }
     &__a {
+      text-align: center;
       font-size: 24px;
       padding: 24px;
+      margin: 21px 10%;
       border: 2px solid #64c29e;
-      margin: 0 auto;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+
+      display: block;
 
       &:hover {
         background: #64c29e;
@@ -60,7 +51,7 @@
       }
 
       &--grey {
-        margin: 0 auto;
+        margin: 21px 10%;
         padding: 20px;
         border: 2px solid #94979a;
         color: #ffffff;

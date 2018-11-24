@@ -26,14 +26,20 @@
 
 @media screen and (max-width: 600px) {
 	.list {
+		flex-wrap: wrap;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		padding: 44px 0 17px;
+		background: #fff;
+		border-bottom: 1px solid #999;
+		opacity: 0.5;
 		&__li {
+			margin: 0 10px;
 			&--mrgn {
 				display: none;
 			}
-		}
-
-		&-a {
-			padding-right: 15px;
 		}
 	}
 }

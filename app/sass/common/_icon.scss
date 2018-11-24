@@ -1,54 +1,43 @@
 .icon {
-  position: relative;
-
   &:before {
     content: "";
     display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 35px;
+    margin: 0 auto 35px;
   }
+
   &--chain:before {
     background: url(../images/chain.png);
     width: 50px;
     height: 43px;
-    position: absolute;
   }
 
   &--body:before {
     background: url(../images/body-icon.png);
     width: 41px;
     height: 30px;
-    position: absolute;
   }
 
   &--la-boriosa:before {
     background: url(../images/la-boriosa.png);
     width: 32px;
     height: 32px;
-    position: absolute;
   }
 
   &--retro:before {
     background: url(../images/retro.png);
     width: 23px;
     height: 41px;
-    position: absolute;
   }
 
   &--twit:before {
     background: url(../images/twit.png);
     width: 32px;
     height: 27px;
-    position: absolute;
   }
 
   &--logo:before {
     background: url(../images/logo.png);
-    bottom: 30px;
     width: 94px;
     height: 85px;
-    transform: translate(-50%, -30%);
   }
 }

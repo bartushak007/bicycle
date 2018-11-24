@@ -16,3 +16,9 @@
     padding-right: 10%;
   }
 }
+
+@media screen and (max-width: 529px) {
+  .icon--chain:before {
+    bottom: 65px;
+  }
+}

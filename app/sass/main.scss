@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import "fonts";
-@import "wrapper";
+@import "common/varibles";
+@import "common/fonts";
+@import "common/wrapper";
 @import "common/logo";
 @import "common/list";
 @import "header";
@@ -18,4 +19,3 @@
 @import "section-links";
 @import "section-form";
 @import "bottom-block";
-

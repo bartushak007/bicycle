@@ -5,7 +5,7 @@ var gulp = require("gulp"),
 
 gulp.task("sass", function() {
 	gulp
-		.src("app/sass/**/*.scss")
+		.src("app/sass/main.scss")
 		.pipe(plumber())
 		.pipe(sass({ outputStyle: "expanded" }))
 		.pipe(gulp.dest("app/css"))
@@ -22,4 +22,10 @@ gulp.task("browser", function() {
 		server: { baseDir: "app" },
 		notify: false
 	});
+});
+
+gulp.task("build", function() {
+	var buildCss = gulp.src(["app/css/*.css"]).pipe(gulp.dest("build/css"));
+	var buildCss = gulp.src(["app/images/*.*"]).pipe(gulp.dest("build/images"));
+	var buildHtml = gulp.src("app/*.html").pipe(gulp.dest("build"));
 });
