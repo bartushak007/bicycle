@@ -1,32 +1,31 @@
 .section-carousel {
   width: 100%;
-  background: #f7f7f7;
+  background: $bottom-background;
   padding: 184px 0 68px;
 
   &__text {
     max-width: 1082px;
     text-align: center;
-    font-family: "Lato", sans-serif;
+    font-family: $lato;
+    color: $grey;
     display: none;
     margin: 0 auto;
   }
 
   &__h {
     font-weight: bold;
-    color: #848789;
     font-size: 18px;
     margin-top: 36px;
     letter-spacing: 3px;
+    color: $dark-grey;
   }
 
   &__span {
-    color: #848789;
     font-weight: lighter;
   }
 
   &__p {
     font-style: italic;
-    color: #848789;
     font-size: 24px;
     margin-top: 36px;
     line-height: 1.5;
@@ -37,39 +36,39 @@
     bottom: 9999px;
   }
 
-  &__radio-one {
-    &:checked ~ .section-carousel__text-one {
+  &__radio--one {
+    &:checked ~ .section-carousel__text--one {
       display: block;
     }
 
     &:checked
       ~ .section-carousel__inputs
-      .section-carousel__input-elem-one:after {
-      background: #a9afb3;
+      .section-carousel__input-elem--one:after {
+      background: $checkbox-color;
     }
   }
 
-  &__radio-two {
-    &:checked ~ .section-carousel__text-two {
+  &__radio--two {
+    &:checked ~ .section-carousel__text--two {
       display: block;
     }
 
     &:checked
       ~ .section-carousel__inputs
-      .section-carousel__input-elem-two:after {
-      background: #a9afb3;
+      .section-carousel__input-elem--two:after {
+      background: $checkbox-color;
     }
   }
 
-  &__radio-three {
-    &:checked ~ .section-carousel__text-three {
+  &__radio--three {
+    &:checked ~ .section-carousel__text--three {
       display: block;
     }
 
     &:checked
       ~ .section-carousel__inputs
-      .section-carousel__input-elem-three:after {
-      background: #a9afb3;
+      .section-carousel__input-elem--three:after {
+      background: $checkbox-color;
     }
   }
 

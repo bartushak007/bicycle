@@ -1,12 +1,54 @@
 .header {
   background: url(../images/header.jpg) center top/cover;
   background-repeat: no-repeat;
+  padding: 35px 0 680px 0;
 
-  &__hamburger {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__li {
+    list-style-type: none;
+    font-size: 13px;
+    color: $menu;
+
+    &--mrgn {
+      margin: 0 35px;
+    }
   }
 
-  &--space {
-    padding: 35px 0 680px 0;
+  &__a {
+    text-decoration: none;
+    font: bold 13px $lato;
+    color: $menu;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    &:hover {
+      color: $cold-blue;
+    }
   }
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    &__list {
+      flex-wrap: wrap;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      padding: 44px 0 17px;
+      background: $white;
+      border-bottom: 1px solid $grey;
+      opacity: 0.5;
+    }
+    &__li {
+      margin: 0 10px;
+      &--mrgn {
+        display: none;
+      }
+    }
+  }
+}

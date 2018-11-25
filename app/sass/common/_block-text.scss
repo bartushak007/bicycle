@@ -1,5 +1,5 @@
 .block-text {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   &--justify {
     text-align: justify;
   }
@@ -9,11 +9,11 @@
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #848789;
+    color: $dark-grey;
   }
 
   &--p {
-    color: #848789;
+    color: $grey;
     &-big {
       font-size: 18px;
       margin-top: 36px;
@@ -30,7 +30,7 @@
         display: block;
         margin: 0 auto;
         margin-top: 42px;
-        border-bottom: 1px solid #d7d7d7;
+        border-bottom: 1px solid $border-text;
       }
     }
   }

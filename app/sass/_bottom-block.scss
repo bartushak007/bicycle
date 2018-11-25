@@ -1,9 +1,9 @@
 .bottom-block {
   width: 100%;
-  padding: 96px 0 105px;
+  padding: 96px 5% 105px;
   font-family: "Lato", sans-seri;
-  color: #848789;
-  background: #f7f7f7;
+  color: $grey;
+  background: $bottom-background;
   display: flex;
   justify-content: center;
 
@@ -22,15 +22,15 @@
   &__span {
     display: flex;
 
-    &-one {
+    &--one {
       font-size: 16px;
       font-weight: bold;
     }
-    &-two {
+    &--two {
       font-size: 14px;
       font-style: italic;
     }
-    &-three {
+    &--three {
       font-size: 14px;
       font-style: italic;
     }

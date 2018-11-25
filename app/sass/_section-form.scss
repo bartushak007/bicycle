@@ -1,38 +1,40 @@
 .section-form {
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-style: italic;
   align-items: center;
-  background: #ffffff;
+  background: $white;
   padding: 227px 0 111px;
 
   &__text {
     font-size: 24px;
-    color: #848789;
+    color: $grey;
   }
   &__my-form {
     margin-top: 40px;
+    vertical-align: top;
   }
   &__input {
     padding: 27px;
     font-size: 20px;
     width: 400px;
     max-width: 100%;
+    border: 1px solid $grey;
 
     &::placeholder {
-      font-family: "Lato", sans-serif;
-      font-style: italic;
-      font-size: 20px;
+      font: italic 20px $lato;
     }
   }
   &__button {
-    padding: 27px 47px;
+    padding: 26px 47px;
     font-size: 24px;
-    background: #64c29e;
-    color: #ffffff;
-    border: 1px solid #64c29e;
+    background: $cold-blue;
+    border: 0;
+    color: $white;
     margin-left: 8px;
+    cursor: pointer;
+    transition: 0.5s;
 
     &:hover {
       opacity: 0.7;
