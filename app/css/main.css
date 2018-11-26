@@ -143,11 +143,7 @@
   font-family: "Lato", sans-serif;
 }
 
-.block-text--justify {
-  text-align: justify;
-}
-
-.block-text--h {
+.block-text__h {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -156,23 +152,23 @@
   color: #353738;
 }
 
-.block-text--p {
+.block-text__p {
   color: #848789;
 }
 
-.block-text--p-big {
+.block-text__p--big {
   font-size: 18px;
   margin-top: 36px;
   line-height: 2;
 }
 
-.block-text--p-small {
+.block-text__p--small {
   font-size: 16px;
   margin-top: 30px;
   line-height: 1.5;
 }
 
-.block-text--p-small:after {
+.block-text__p--small:after {
   content: "";
   width: 50px;
   display: block;
@@ -188,6 +184,10 @@
 
 .section-oliva--reverse {
   flex-direction: row-reverse;
+}
+
+.section-oliva--justify {
+  text-align: justify;
 }
 
 .section-oliva__img--bicycle {
@@ -635,7 +635,7 @@
 .bottom-block {
   width: 100%;
   padding: 96px 5% 105px;
-  font-family: "Lato", sans-seri;
+  font-family: "Lato", sans-serif;
   color: #848789;
   background: #f7f7f7;
   display: flex;

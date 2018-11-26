@@ -1,9 +1,7 @@
 .block-text {
   font-family: $lato;
-  &--justify {
-    text-align: justify;
-  }
-  &--h {
+
+  &__h {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -12,14 +10,14 @@
     color: $dark-grey;
   }
 
-  &--p {
+  &__p {
     color: $grey;
-    &-big {
+    &--big {
       font-size: 18px;
       margin-top: 36px;
       line-height: 2;
     }
-    &-small {
+    &--small {
       font-size: 16px;
       margin-top: 30px;
       line-height: 1.5;
