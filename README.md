@@ -1,2 +1,2 @@
 # bicycle
-[link](https://bartushak007.github.io/bicycle/build/)
+[link](https://bartushak007.github.io/bicycle.github.io/build/)
